@@ -4,6 +4,12 @@
 
   .intro {
 
+    img {
+      @media @mobile {
+        width: 100%;
+      }
+    }
+
     h2 {
       padding: 15px;
     }
@@ -19,11 +25,21 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @mobile {
+        width: 95%;
+      }
     }
   }
 
@@ -58,6 +74,7 @@
       }
 
       .btn {
+        .mybtn();
       }
     }
 
