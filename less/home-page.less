@@ -62,8 +62,18 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+      padding: 0 0;
+      flex-direction: column;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0 10px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -75,12 +85,24 @@
 
       .btn {
         .mybtn();
+
+        @media @mobile {
+          width: 100%;
+          height: 70px;
+          font-size: 2.5rem;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @mobile {
+        width: 95%;
+        order: -1;
+        margin: 0 auto;
+      }
       
       img {
         width: 100%;

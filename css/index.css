@@ -190,7 +190,7 @@ p {
 }
 @media only screen and (max-width: 500px) {
   .header .header-container h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 .header .header-container nav {
@@ -208,7 +208,7 @@ p {
 }
 @media only screen and (max-width: 500px) {
   .header .header-container nav a {
-    margin: 0 5px;
+    margin: 0 15px;
   }
 }
 footer {
@@ -271,8 +271,20 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media only screen and (max-width: 500px) {
+  .home .walk {
+    padding: 0 0;
+    flex-direction: column;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media only screen and (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    padding: 0 10px;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -291,9 +303,23 @@ footer {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 70px;
+    font-size: 2.5rem;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media only screen and (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 95%;
+    order: -1;
+    margin: 0 auto;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
